@@ -2,9 +2,16 @@
   height: 100vh;
   padding: 1rem;
   border: .5rem solid darkblue;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
   margin: 0;
   color: darkblue;
+}
+
+app-parent {
+  flex: 1 1 0;
+  display: flex;
 }
