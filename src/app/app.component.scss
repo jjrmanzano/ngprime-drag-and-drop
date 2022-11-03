@@ -9,6 +9,16 @@
 .title {
   margin: 0 0 .5em 0;
   color: darkblue;
+
+  a {
+    margin-left: .5rem;
+    font-size: small;
+
+    em {
+      margin-left: .25rem;
+      font-size: x-small;
+    }
+  }
 }
 
 app-parent {
