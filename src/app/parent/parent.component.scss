@@ -22,6 +22,14 @@
       align-items: center;
     }
 
+    .cursor-grab {
+      cursor: move;
+    }
+
+    .cursor-grab:active {
+      cursor: grabbing;
+    }
+
     div, app-child {
       flex: 1 1 0;
       justify-content: center;

@@ -1,4 +1,11 @@
 <div class="component">
-  <h2 class="title">Child Component</h2>
-  <div class="content"></div>
+  <h2 class="title">Child Component - Selected Pokemon</h2>
+  <div class="content" pDroppable="drag-and-drop-pokemon-scope" (onDrop)="drop($event)">
+    <span *ngIf="!selectedPokemon?.length">Drop Pokemon here...</span>
+    <div class="selected-pokemon" *ngFor="let pokemon of selectedPokemon">
+      <span>{{ pokemon.name.toUpperCase() }}</span>
+      <img [src]="pokemon.imageUrl" alt="">
+    </div>
+  </div>
 </div>
+

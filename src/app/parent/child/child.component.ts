@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Pokemon } from '../../services/pokemon.service';
 
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.scss']
 })
-export class ChildComponent implements OnInit {
+export class ChildComponent {
 
-  constructor() { }
+  @Input() selectedPokemon!: Pokemon[];
+  @Output() onPokemonDropped: EventEmitter<string> = new EventEmitter();
 
-  ngOnInit(): void {
+  drop(_event: DragEvent): void {
+    this.onPokemonDropped.emit();
   }
 
 }

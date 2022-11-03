@@ -3,12 +3,16 @@
   <div class="content">
     <div>
       <ng-container *ngFor="let pokemon of pokemonList$ | async">
-        <div class="available-pokemon">
+        <div *ngIf="!selectedPokemon.includes(pokemon)"
+             class="available-pokemon cursor-grab"
+             pDraggable="drag-and-drop-pokemon-scope"
+             (onDragStart)="dragStart($event, pokemon)"
+             (onDragEnd)="dragEnd($event)">
           <span>{{ pokemon.name.toUpperCase() }}</span>
           <img [src]="pokemon.imageUrl" alt="">
         </div>
       </ng-container>
     </div>
-    <app-child></app-child>
+    <app-child [selectedPokemon]="selectedPokemon" (onPokemonDropped)="pokemonDropped()"></app-child>
   </div>
 </div>
