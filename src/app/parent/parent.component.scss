@@ -2,9 +2,27 @@
   padding: 1rem;
   border: .5rem solid dodgerblue;
   flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    margin: 0;
+    color: dodgerblue;
+  }
+
+  .content {
+    flex: 1 1 0;
+    display: flex;
+    margin: .5em 0;
+
+    div, app-child {
+      flex: 1 1 0;
+    }
+
+    app-child {
+      display: flex;
+    }
+  }
 }
 
-.title {
-  margin: 0;
-  color: dodgerblue;
-}
+
