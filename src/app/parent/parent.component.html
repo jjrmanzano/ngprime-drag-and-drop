@@ -1,8 +1,13 @@
 <div class="component">
-  <h2 class="title">Parent Component</h2>
+  <h2 class="title">Parent Component - Available Pokemon</h2>
   <div class="content">
     <div>
-      <span>Parent Content</span>
+      <ng-container *ngFor="let pokemon of pokemonList$ | async">
+        <div class="available-pokemon">
+          <span>{{ pokemon.name.toUpperCase() }}</span>
+          <img [src]="pokemon.imageUrl" alt="">
+        </div>
+      </ng-container>
     </div>
     <app-child></app-child>
   </div>

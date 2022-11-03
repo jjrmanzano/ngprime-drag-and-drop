@@ -15,8 +15,16 @@
     display: flex;
     margin: .5em 0;
 
+    .available-pokemon {
+      border-bottom: 1px solid lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     div, app-child {
       flex: 1 1 0;
+      justify-content: center;
     }
 
     app-child {
