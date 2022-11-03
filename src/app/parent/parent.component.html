@@ -8,6 +8,7 @@
              pDraggable="drag-and-drop-pokemon-scope"
              (onDragStart)="dragStart($event, pokemon)"
              (onDragEnd)="dragEnd($event)">
+          <em class="pi pi-ellipsis-v"></em>
           <span>{{ pokemon.name.toUpperCase() }}</span>
           <img [src]="pokemon.imageUrl" alt="">
         </div>
