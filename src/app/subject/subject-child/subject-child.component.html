@@ -1,0 +1,14 @@
+<div class="component">
+  <h2 class="title">Child Component - Selected Pokemon</h2>
+  <div class="content" pDroppable="drag-and-drop-pokemon-available-to-selected" (onDrop)="drop($event)">
+    <span *ngIf="!(selectedPokemon$ | async)?.length">Drop Pokemon here...</span>
+    <div class="selected-pokemon cursor-grab" *ngFor="let pokemon of selectedPokemon$ | async"
+         pDraggable="drag-and-drop-pokemon-selected-to-available"
+         (onDragStart)="dragStart($event, pokemon)"
+         (onDragEnd)="dragEnd($event)">
+      <em class="pi pi-ellipsis-v"></em>
+      <span>{{ pokemon.name.toUpperCase() }}</span>
+      <img [src]="pokemon.imageUrl" alt="">
+    </div>
+  </div>
+</div>

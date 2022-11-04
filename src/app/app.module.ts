@@ -8,12 +8,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
+import { SubjectAncestorComponent } from './subject/subject-ancestor/subject-ancestor.component';
+import { SubjectParentComponent } from './subject/subject-parent/subject-parent.component';
+import { SubjectChildComponent } from './subject/subject-child/subject-child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    SubjectAncestorComponent,
+    SubjectParentComponent,
+    SubjectChildComponent
   ],
   imports: [
     BrowserModule,

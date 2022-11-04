@@ -5,3 +5,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+app-parent,
+app-child,
+app-subject-ancestor,
+app-subject-parent,
+app-subject-child {
+  flex: 1 1 0;
+  display: flex;
+}

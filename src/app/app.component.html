@@ -4,6 +4,10 @@
     <a href="https://github.com/jjrmanzano/ngprime-drag-and-drop"
        target="_blank">View on GitHub<em class="pi pi-external-link"></em></a>
   </h2>
-  <app-parent></app-parent>
+  <div class="menu">
+    <button class="button" routerLink="direct" routerLinkActive="active">Direct</button>
+    <button class="button" routerLink="subject" routerLinkActive="active">Subject</button>
+  </div>
+  <router-outlet></router-outlet>
 </div>
 
