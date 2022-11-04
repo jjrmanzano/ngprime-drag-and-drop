@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { DraggablePokemonService } from '../draggable-pokemon.service';
 import { Observable, of } from 'rxjs';
-import { Pokemon } from '../../services/pokemon.service';
+import { Pokemon } from '../../pokemon.service';
 
 @Component({
   selector: 'app-subject-ancestor',

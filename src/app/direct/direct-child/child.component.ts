@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Pokemon } from '../../services/pokemon.service';
+import { Pokemon } from '../../pokemon.service';
 
 @Component({
   selector: 'app-child',

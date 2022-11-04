@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of} from "rxjs";
-import { Pokemon } from '../../services/pokemon.service';
+import { Pokemon } from '../../pokemon.service';
 import { DraggablePokemonService } from '../draggable-pokemon.service';
 
 @Component({

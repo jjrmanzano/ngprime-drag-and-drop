@@ -6,8 +6,8 @@ import { DragDropModule } from 'primeng/dragdrop';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './parent/child/child.component';
+import { ParentComponent } from './direct/direct-parent/parent.component';
+import { ChildComponent } from './direct/direct-child/child.component';
 import { SubjectAncestorComponent } from './subject/subject-ancestor/subject-ancestor.component';
 import { SubjectParentComponent } from './subject/subject-parent/subject-parent.component';
 import { SubjectChildComponent } from './subject/subject-child/subject-child.component';

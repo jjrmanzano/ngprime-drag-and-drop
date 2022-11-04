@@ -3,8 +3,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { AppComponent } from './app.component';
-import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './parent/child/child.component';
+import { ParentComponent } from './direct/direct-parent/parent.component';
+import { ChildComponent } from './direct/direct-child/child.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {

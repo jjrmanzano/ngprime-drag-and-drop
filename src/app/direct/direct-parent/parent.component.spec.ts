@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { ParentComponent } from './parent.component';
-import { ChildComponent } from './child/child.component';
+import { ChildComponent } from '../direct-child/child.component';
 
 describe('ParentComponent', () => {
   let component: ParentComponent;
